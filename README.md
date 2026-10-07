@@ -2,10 +2,10 @@
   <img src="https://github.com/Runa8147/Hackathena_Readme_Template/blob/d0add823684f0ac28b76a99636c729f80b0ca8ff/hackathena_banner.png" alt="Hackathena '26 2.0" width="100%">
 </p>
 
-<h1 align="center">[PROJECT NAME]</h1>
+<h1 align="center">ShopShield AI</h1>
 
 <p align="center">
-  <strong>[One-line description of your solution]</strong>
+  <strong>ShopShield AI is an ML-powered solution that analyzes e-commerce website URLs and detects potentially fake or fraudulent websites before users interact with them.</strong>
 </p>
 
 <p align="center">
@@ -18,14 +18,14 @@
 
 ## 👥 Team
 
-**Team Name:** `[TEAM NAME]`
+**Team Name:** `Neural Trace`
 
-| Member     | Role      | Institution |
-| ---------- | --------- | ----------- |
-| **[Name]** | Team Lead | [College]   |
-| **[Name]** | [Role]    | [College]   |
-| **[Name]** | [Role]    | [College]   |
-| **[Name]** | [Role]    | [College]   |
+|      Member          |    Role       |       Institution            |
+|    ----------        | ---------     |   -------------------        |
+| **Adhya Krishnan**   | Team Lead     | Jyothi Engineering College   |
+| **Aleena Rose Joji** | Team Member   | Jyothi Engineering College   |
+| **Amrita Shinod**    | Team Member   | Jyothi Engineering College   |
+| **Anjana Ravi**      | Team Member   | Jyothi Engineering College   |
 
 ---
 
@@ -35,32 +35,58 @@ The rapid advancement of generative AI has made it increasingly difficult to dis
 
 Deepfakes, cloned voices, synthetic images, fabricated documents, and other AI-assisted techniques can enable **impersonation, misinformation, identity theft, financial fraud, and social engineering attacks**.
 
-**[Describe the specific fraud/problem your project addresses in 2–3 concise sentences.]**
+**Fake e-commerce websites often imitate genuine shopping platforms using attractive offers, copied designs, and suspicious URLs. Users may find it difficult to identify these fraudulent websites before sharing personal or payment information. Therefore, a reliable system is needed to detect suspicious websites and provide users with an early warning about potential risks.**
 
 ---
 
 ## 💡 Solution
 
-### [PROJECT NAME]
+### ShopShield AI
 
-**[Project Name]** is a **[web/mobile/desktop/API]** solution designed to detect and/or prevent **[specific type of AI-based fraud]**.
+** ShopShield AI** is a **web-based AI/ML solution** solution designed to detect **potentially fraudulent and suspicious e-commerce websites.**.
 
-The system takes **[input]**, analyzes it using **[AI/ML/algorithm/verification mechanism]**, and produces **[detection result/risk score/authenticity assessment/alert]** to help users identify potentially fraudulent content.
+The system takes **website URL as input**, analyzes it using **machine learning and website feature extraction techniques**, and produces **website classification and risk assessment** to help users identify potentially fraudulent content.
 
 ### Key Features
 
-* 🔴 **[Feature 1]** — [Short description]
-* ⚪ **[Feature 2]** — [Short description]
-* ⚫ **[Feature 3]** — [Short description]
-* 🔴 **[Feature 4]** — [Short description]
-* ⚪ **[Feature 5]** — [Short description]
+* 🔴 **URL Analysis** — Accepts an e-commerce website URL and analyzes its characteristics.
+* ⚪ **Machine Learning Detection** — Uses a trained ML model to classify websites as legitimate or suspicious.
+* ⚫ **Risk Assessment** — Provides a clear risk level based on the analysis.
+* 🔴 **Feature Extraction** — Extracts relevant URL and webpage security features for prediction.
+* ⚪ **User-Friendly Interface** — Provides an attractive and simple interface for submitting URLs and viewing results.
 
 ---
 
 ## 🔄 How It Works
 
 ```text
-      provide architectural diagram here
+      User enters Website URL
+               │
+               ▼
+        React Frontend
+               │
+               ▼
+         Flask Backend
+               │
+               ▼
+       Feature Extraction
+               │
+               ▼
+       Trained ML Model
+               │
+               ▼
+       Website Prediction
+               │
+     ┌─────────┴─────────┐
+     ▼                   ▼
+LEGITIMATE           SUSPICIOUS
+     │                   │
+     └─────────┬─────────┘
+               ▼
+          Risk Result
+               │
+               ▼
+          User Display
 ```
 
 ![System Architecture](ARCHITECTURE_IMAGE_URL)
@@ -73,21 +99,22 @@ The system takes **[input]**, analyzes it using **[AI/ML/algorithm/verification 
 
 ### Software
 
-| Layer          | Technologies                             |
-| -------------- | ---------------------------------------- |
-| **Frontend**   | [React / Next.js / HTML / CSS / etc.]    |
-| **Backend**    | [FastAPI / Flask / Node.js / etc.]       |
-| **AI / ML**    | [Model / Framework / API]                |
-| **Database**   | [PostgreSQL / MongoDB / Firebase / etc.] |
-| **Processing** | [OpenCV / NumPy / etc.]                  |
-| **Deployment** | [Vercel / Render / Railway / etc.]       |
+| Layer          | Technologies                              |
+| -------------- | ----------------------------------------  |
+| **Frontend**   | React.js, HTML, CSS, JavaScript           |
+| **Backend**    | Python, Flask, Flask-CORS                 |
+| **AI / ML**    | Scikit-learn, trained classification model|
+| **Database**   | Not used                                  |
+| **Processing** | Pandas, NumPy, Requests, BeautifulSoup    |
+| **Deployment** | Localhost / Netlify                       |
 
 ### Tools
 
 * Git & GitHub
-* [Development Tool]
-* [API / AI Service]
-* [Other Tools]
+* Python
+* Node.js & npm
+* PowerShell
+* Browser Developer Tools
 
 ---
 
@@ -95,19 +122,19 @@ The system takes **[input]**, analyzes it using **[AI/ML/algorithm/verification 
 
 ### Main Interface
 
-![Main Interface](SCREENSHOT_1_URL)
+![Main Interface](https://drive.google.com/drive/folders/1uO8V_0e2TZYgFf0kyZTAEXksIBwziQHo)
 
 *Main interface of the application.*
 
 ### Detection / Analysis
 
-![Detection](SCREENSHOT_2_URL)
+![Detection](https://drive.google.com/drive/folders/1GbI1jU2727gQpBY67G5BaOeEND9jB4A_)
 
 *AI fraud detection and analysis workflow.*
 
 ### Results
 
-![Results](SCREENSHOT_3_URL)
+![Results](https://drive.google.com/drive/folders/16O2i7OlUc1ti3Lp2W0X8uBRVBlXE5K_k)
 
 *Detection result, risk assessment, and supporting information.*
 
@@ -115,13 +142,14 @@ The system takes **[input]**, analyzes it using **[AI/ML/algorithm/verification 
 
 ## 📊 Results
 
-| Metric                 | Result                                      |
-| ---------------------- | ------------------------------------------- |
-| **Detection Accuracy** | [XX%]                                       |
-| **Precision**          | [XX%]                                       |
-| **Recall**             | [XX%]                                       |
-| **Response Time**      | [XX seconds]                                |
-| **Supported Input**    | [Images / Audio / Video / Documents / etc.] |
+| Metric                     | Result                                      |
+| ----------------------     | ------------------------------------------- |
+| **Legitimate Probability** | 90%                                         |
+| **Phishing Risk Score**    | 10%                                         |
+| **Phishing Probability**   | 10%                                         |
+| **Security Verdict**       | Legitimate (Low Risk)                       |
+| **Detected Indicators**    | 3 Threat Signals                            |
+| **Supported Input**        | URL / Domain                                |
 
 > **Note:** Replace the above values with measured results from the final prototype. Remove metrics that are not applicable.
 
@@ -131,17 +159,26 @@ The system takes **[input]**, analyzes it using **[AI/ML/algorithm/verification 
 
 ### Prerequisites
 
-* [Python 3.x / Node.js / etc.]
-* [Required API keys]
-* [Other dependencies]
-
+* * Python 3.12
+* Node.js and npm
+* Git
+* Visual Studio Code
+* A modern web browser
+* 
 ### Installation
 
 ```bash
 git clone [REPOSITORY_URL]
-cd [PROJECT_DIRECTORY]
+cd Hackethena
 
 [INSTALL_COMMAND]
+cd backend
+py -3.12 -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+cd frontend
+npm install
 ```
 
 ### Environment Variables
@@ -156,7 +193,14 @@ Create a `.env` file:
 ### Run
 
 ```bash
-[RUN_COMMAND]
+cd backend
+.\venv\Scripts\Activate.ps1
+python app.py
+http://127.0.0.1:5000
+
+cd frontend
+npm run dev
+http://localhost:5173
 ```
 
 The application will be available at:
@@ -175,7 +219,7 @@ The application will be available at:
 
 ### Demo Video
 
-**[DEMO VIDEO URL]**
+**[https://drive.google.com/drive/folders/1yemkCp7h7nwBV_UGqbBPTxxodYcMprzh]**
 
 > The demo demonstrates the complete workflow from input submission to fraud detection, analysis, and final result.
 
@@ -186,21 +230,25 @@ The application will be available at:
 **Input**
 
 ```text
-[Example input provided to the system]
+https://example-shopping-site.com
 ```
 
 **System Analysis**
 
 ```text
-[Brief representation of the analysis]
+URL Length: Analyzed
+IP Address Usage: Checked
+HTTPS Token: Checked
+URL Shortening: Checked
+Domain Information: Analyzed
+Webpage Features: Extracted
+ML Model: Prediction generated
 ```
 
 **Result**
 
 ```text
-[AUTHENTIC / SUSPICIOUS / AI-GENERATED / FRAUDULENT]
-Confidence: [XX%]
-Risk Level: [LOW / MEDIUM / HIGH]
+Unable to analyze website
 ```
 
 ---
@@ -209,34 +257,31 @@ Risk Level: [LOW / MEDIUM / HIGH]
 
 The system is designed with user privacy and responsible AI usage in mind.
 
-* [No permanent storage of uploaded content]
-* [Secure processing]
-* [Minimal collection of user data]
-* [API credentials stored through environment variables]
-* [Other relevant privacy measure]
-
-> Replace the above points with the actual privacy and security mechanisms implemented in the project.
+* URL-Based Analysis — The system requires only the website URL for detection.
+* No Password Collection — Users are not required to provide passwords, payment details, or other sensitive credentials.
+* Secure API Communication — The frontend communicates with the backend through the application API.
+* Minimal Data Collection — The system focuses on website-related features required for ML-based detection.
+* Credential Protection — If external API credentials are added in the future, they should be stored using environment variables rather than hard-coded in the    source code.
+* Responsible Detection — Detection results are intended to help users assess potentially suspicious websites and should not be considered a guaranteed security verdict.
 
 ---
 
 ## 🔮 Future Scope
 
-* [ ] Improve detection accuracy with larger and more diverse datasets
-* [ ] Support additional types of AI-generated content
-* [ ] Add real-time detection capabilities
-* [ ] Improve explainability of detection results
-* [ ] Deploy scalable inference infrastructure
-* [ ] Integrate with [relevant platform/system]
-* [ ] Add [future feature]
+* Browser Extension – automatically checks a shopping website while browsing.
+* Real-Time Detection – analyzes websites instantly before users interact with them.
+* Threat Intelligence Integration – checks domain reputation and known malicious websites.
+* Explainable AI – tells users why a website was classified as suspicious.
+* Continuous Model Training – improves detection as new fake websites appear.
 
 ---
 
 ## 👨‍💻 Team Contributions
 
-* **[Member 1]** — [Architecture / AI model / Backend / etc.]
-* **[Member 2]** — [Frontend / UI / Integration / etc.]
-* **[Member 3]** — [Dataset / ML / Testing / etc.]
-* **[Member 4]** — [Research / Documentation / Deployment / etc.]
+* **Adhya Krishnan** — Architecture & AI model development
+* **Aleena Rose Joji** — Frontend & UI Integration 
+* **Amrita Shinod** — Dataset & model Testing 
+* ***Anjana Ravi** — Research & Documentation 
 
 ---
 
@@ -274,9 +319,9 @@ The project focuses on addressing emerging forms of fraud enabled or amplified b
 
 For questions, collaboration, or further information:
 
-**Team:** [TEAM NAME]
-**Team Lead:** [NAME]
-**Email:** [EMAIL]
+**Team:** Neural Trace
+**Team Lead:** Adhya Krishnan
+**Email:** aadhyahkrishnan@gmail.com
 **GitHub:** [GITHUB REPOSITORY]
 
 ---
